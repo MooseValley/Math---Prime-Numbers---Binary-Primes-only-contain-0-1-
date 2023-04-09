@@ -1,2 +1,15 @@
-# Math---Prime-Numbers---Binary-Primes-only-contain-0-1-
-Math - Prime Numbers - Binary Primes (only contain 0, 1)
+# Math - Prime Numbers - Binary Primes (only contain 0, 1)
+
+I invented these - or thought I had - in the hope of adding a sequence to OEIS (https://oeis.org/).
+
+Sadly, I included 1 at the front of my sequence, so my search revealed no entries in the OEIS.
+
+After I submitted 2 sequences to the OEIS, I was reminded that
+* 1 is NOT a prime
+
+and I found out that
+* both of my sequences were already in the OEIS (without the 1).
+
+Gutted ... thought I had finally contributed something.
+
+Mike O

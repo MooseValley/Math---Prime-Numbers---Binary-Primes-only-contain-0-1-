@@ -1,0 +1,85 @@
+
+
+https://oeis.org/
+
+https://oeis.org/draft/A361532
+Submitted for review: Wed, 15-Mar-2023, 02:54 PM
+
+UPDATE: Wed, 15-Mar-2023, 05:03 PM
+1 is NOT a prime
+and when I searched the OEIS for my sequence, I included the starting 1 which made the search return "Not found".
+SO I thought I had a new / unique sequence.
+If I had left off the starting 1, this sequence is already in the OEIS:
+https://oeis.org/A065720
+DARN IT !!!!!!
+
+See review comments and my reply below.
+
+Mike O
+
+
+
+
+
+******************************************************
+
+Wed, 15-Mar-2023, 02:23 PM
+
+Name:	Binary Prime Numbers in Decimal
+Data:	1, 3, 5, 23, 47, 89, 101, 149, 157, 163, 173, 179, 185, 199, 229, 247, 253, 295, 313, 329, 331, 355, 367, 379, 383,
+Offset:	1
+Comments:
+
+I scanned through the first 6,113,046 Prime Numbers and found those that contained only binary (0, 1) digits (I call these "Binary Primes"):
+1, 11, 101, 10111, 101111, 1011001, 1100101, 10010101, 10011101, 10100011, 10101101, 10110011, 10111001, 11000111, 11100101, 11110111, 11111101, 100100111, 100111001, 101001001, 101001011, 101100011, 101101111, 101111011, 101111111,
+
+And then I converted these "Binary Primes" from Binary -> Decimal:
+1, 3, 5, 23, 47, 89, 101, 149, 157, 163, 173, 179, 185, 199, 229, 247, 253, 295, 313, 329, 331, 355, 367, 379, 383,
+
+Interesting points:
+
+(1). the 7th "Binary Primes" in the sequence (101) is also a Binary Prime.
+
+(2). the first 12 "Binary Primes" in the sequence are also prime numbers.  The 13th number, 185, is not prime.
+
+(3). These "Binary Primes" are not primes: 185, 247, 253, 295, 329, 355,
+
+(4). 6 of the 25 "Binary Primes" in the sequence (so far) are NOT prime (19 are prime, approx 75%).
+
+I wish I had more primes to search further.  My existing primes data file is a file I generated (using my own Java program), and it contains only the first 6,113,046 Prime Numbers found and checked so far.  This file is 58 MB.  Need more data.  Need to download a big primes data file from the internet.
+
+
+References:
+LINKS:	<a href="https://moosevalley.github.io/"> Moose's Software Valley</a>
+FORMULA:	None found (yet).
+Example: 101111 is the 5th prime number that contains only binary (0, 1) digits.  Convert this to decimal and you get 47 (which is the 5th number in this sequence).
+PROG:	Can supply a Java program, but it requires a data file of primes numbers (one per line).
+KEYWORD:
+(Was: binary primes but these were not allowed)
+AUTHOR:	_Mike OMalley_, Mar 15 2023
+
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+
+https://oeis.org/draft/A361532
+Submitted for review: Wed, 15-Mar-2023, 02:54 PM
+
+
+Discussion
+Wed Mar 15 	01:05
+Jon E. Schoenfield: This appears to be an incorrect duplicate of A065720.
+
+	01:18
+Jon E. Schoenfield: 1 is not a prime.
+
+	02:00
+Jon E. Schoenfield: The following Magma program, which you could run on the Magma Calculator at http://129.78.68.121/calc/ if interested, outputs the first 3400 terms (i.e., all the terms <= 97050) in about 7 seconds. (It could compute all the terms <= 550000 or so before running into a time limit at 60 seconds, but it runs into an output size limit a little beyond the 3400th term.) for k in [1..97050] do if IsPrime(Seqint(Intseq(k,2),10)) then k; end if; end for;
+
+	03:12
+Mike OMalley: "1 is not a prime." but 1 is divisible only by itself and 1, so it definitely qualifies as a prime number, and it is included as a prime in other prime number sequences in the OEIS, such as: https://oeis.org/A303077 Anyway, so gutted to see this sequence is already in the OEIS. Really thought I might be onto something unique. I watched the NumberPhile video on the AKS Fool Proof check for a prime today and will update / adapt my code to get similar speeds to other tools out there. (I was doing things the slow old way). Anyway, one day I will add something to the OEIS, one day ... Have a nice day !
+
+ 	03:18
+Mike OMalley: Sorry disregard my not prime comment, been writing code all day and aren't thinking straight.

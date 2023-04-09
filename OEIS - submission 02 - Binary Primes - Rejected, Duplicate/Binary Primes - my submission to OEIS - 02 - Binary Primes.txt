@@ -1,0 +1,52 @@
+
+
+https://oeis.org/
+
+https://oeis.org/draft/A361533
+Submitted for review: Wed, 15-Mar-2023, 03:01 PM
+
+
+UPDATE: Wed, 15-Mar-2023, 05:05 PM
+1 is NOT a prime
+and when I searched the OEIS for my sequence, I included the starting 1 which made the search return "Not found".
+SO I thought I had a new / unique sequence.
+If I had left off the starting 1, this sequence is already in the OEIS:
+https://oeis.org/A020449
+DARN IT !!!!!!
+
+See review comments and my reply below.
+
+Mike O
+
+
+******************************************************
+
+Name:	Binary Prime Numbers
+Data:	1, 11, 101, 10111, 101111, 1011001, 1100101, 10010101, 10011101, 10100011, 10101101, 10110011, 10111001, 11000111, 11100101, 11110111, 11111101, 100100111, 100111001, 101001001, 101001011, 101100011, 101101111, 101111011, 101111111,
+Offset:	1
+Comments:	The first 26  Prime Numbers that contain only binary (0, 1) digits (I call these "Binary Primes").
+
+References:
+LINKS:	<a href="https://moosevalley.github.io/"> Moose's Software Valley</a>
+FORMULA:	None found (yet).
+
+AUTHOR:	_Mike OMalley_, Mar 15 2023
+
+
+
+*********************************************************************
+*********************************************************************
+*********************************************************************
+
+https://oeis.org/draft/A361533
+Submitted for review: Wed, 15-Mar-2023, 03:01 PM
+
+Discussion
+Wed Mar 15 	01:48
+Michel Marcus: 1 is not a prime, so after correction this is a duplicate of A020449
+
+	03:16
+Mike OMalley: "1 is not a prime." but 1 is divisible only by itself and 1, so it definitely qualifies as a prime number, and it is included as a prime in other prime number sequences in the OEIS, such as: https://oeis.org/A303077 Anyway, one day I will add something to the OEIS, one day ... Have a nice day !
+
+03:18
+Mike OMalley: Sorry disregard my not prime comment, been writing code all day and aren't thinking straight.
